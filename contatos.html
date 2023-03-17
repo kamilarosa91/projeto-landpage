@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Studio Dark Academia</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="caixa">
+            <h1><img src="img/logo-certa.png" alt="logomarca"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <form action="contato">
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="imput-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="imput-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="imput-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem"  cols="70" rows="10" class="imput-padrao" required></textarea>
+
+
+            <fieldset>
+                <legend> Como prefere o nosso contato? </legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email"  class="contato" >
+                    Email</label>
+                
+                <label for="radio-telefone"> <input type="radio" name="contato" value="telefone"  class="contato" >
+                    Telefone</label>
+               
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp"  class="contato" checked>Whatsapp</label>
+                
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossa novidades por email?</label>
+
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+    </main>
+    <footer class="rodape">
+        <img class="rodape-img" src="img/logo-rodape2.png" alt="logomarca">
+        <p class="copyright">&copy; Studio Dark Academia</p>
+
+    </footer>
+</body>
+
+</html>
